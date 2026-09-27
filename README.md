@@ -18,8 +18,29 @@ v1 diagnoses two failure modes from the submitted answer alone:
 A third, common failure mode is wrong factor pair. It can't be reliably diagnosed from the final answer alone — indistinguishable from a random guess — so it falls back to the "wrong, try again" message with no specific hint.
 
 # Non-goals
-**Deferred:** LangGraph adaptive agent, RAG over revision notes, voice input (AssemblyAI), Supabase auth + progress tracking, Next.js frontend.
+What i plan to add:
 
-**Cut for v1:**
-- Other forms of solving quadratics, such as the quadratic formula, completing the square, or the graphical method — factoring only, to keep the diagnostic logic to one method.
-- Photo/OCR input of handwritten working — cut because it would require OCR plus vision-model infrastructure, too large for a scoped-down v1.
+- An AI helper that notices patterns and reacts to them (LangGraph): the "Buddy noticed" nudge on Today, "Let Buddy choose for me" on Choose a topic
+
+- Pulling up the right revision note automatically (RAG): the Notes screen, and the "From your revision notes" card on Feedback
+
+- Talking answers out loud instead of typing (AssemblyAI): the mic and "Your working" panel on Practice
+
+- Signing in and saving progress (Supabase): Login and Progress screens
+
+- The actual app screens, built for real (Next.js): all of the above
+
+
+
+What i have decided against:
+
+- Other forms of solving quadratics, such as the quadratic formula, completing the square, or the graphical method. v1 has factoring only, to keep the diagnostic logic to one method.
+
+- Photo/OCR input of handwritten working. This was cut because it would require OCR plus vision-model infrastructure, too large for a scoped-down v1.
+
+- The student having to rearrange an equation. Every question is pre-formatted, so this doesn't need to happen.
+
+- Wrong-factor-pair diagnosis. This is because it is not distinguishable from a guess using only the final answer.
+
+- Photo/OCR input of handwritten working — would require OCR plus vision-model infrastructure, too large for a scoped-down v1.
+

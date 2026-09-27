@@ -44,3 +44,6 @@ What i have decided against:
 
 - Photo/OCR input of handwritten working — would require OCR plus vision-model infrastructure, too large for a scoped-down v1.
 
+# Full product vision (design draft, not verified logic):
+[View the Study Buddy PDF](Studdy%20Buddy.pdf)
+
